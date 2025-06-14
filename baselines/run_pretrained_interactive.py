@@ -47,7 +47,7 @@ if __name__ == '__main__':
     #keyboard.on_press_key("M", toggle_agent)
     obs, info = env.reset()
     while True:
-        action = 7 # pass action
+        action = 5 # pass action
         try:
             with open("agent_enabled.txt", "r") as f:
                 agent_enabled = f.readlines()[0].startswith("yes")
