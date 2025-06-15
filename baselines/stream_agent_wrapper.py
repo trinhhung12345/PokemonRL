@@ -10,7 +10,7 @@ MAP_N_ADDRESS = 0xD35E
 class StreamWrapper(gym.Wrapper):
     def __init__(self, env, stream_metadata={}):
         super().__init__(env)
-        self.ws_address = "wss://transdimensional.xyz/broadcast"
+        self.ws_address = "ws://localhost:8888/broadcast"
         self.stream_metadata = stream_metadata
         self.loop = asyncio.new_event_loop()
         asyncio.set_event_loop(self.loop)
@@ -69,10 +69,12 @@ class StreamWrapper(gym.Wrapper):
             try:
                 await self.websocket.send(message)
             except websockets.exceptions.WebSocketException as e:
+                print(e)
                 self.websocket = None
 
     async def establish_wc_connection(self):
         try:
             self.websocket = await websockets.connect(self.ws_address)
         except:
+            print("Could not connect to websocket")
             self.websocket = None
