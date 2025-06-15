@@ -60,7 +60,7 @@
 
 ### **A. Test model đã huấn luyện**
 
-Chạy file [run_pretrained_interactive.py](http://_vscodecontentref_/0) để test model:
+Chạy file [run_pretrained_interactive.py] để test model:
 ```sh
 python run_pretrained_interactive.py
 ```
