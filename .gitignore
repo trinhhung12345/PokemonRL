@@ -7,8 +7,9 @@ rollouts
 raw_documentation
 *.pem
 _autoplay.mp4
-# session_*
+session_*
 .env
 PokemonRed.gb.state
 venv*
 .python-version
+wandb
