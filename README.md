@@ -63,13 +63,14 @@
 Chạy file [run_pretrained_interactive.py](http://_vscodecontentref_/0) để test model:
 ```sh
 python run_pretrained_interactive.py
-
+```
 ### **B. Train model mới (lưu ý, cần rất nhiêu core cpu)**
 
 Chạy file run_baseline_parallel_fast.py để bắt đầu train:
 ```sh
 python run_baseline_parallel.py
-
+```
 hoặc
 ```sh
 python run_baseline_parallel_fast.py
+```
