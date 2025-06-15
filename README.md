@@ -1,6 +1,6 @@
 ## Tổng quan
 
-Đây là project huấn luyện và kiểm thử AI chơi game Pokémon Red trên giả lập Game Boy, sử dụng các thuật toán reinforcement learning hiện đại. Project hỗ trợ cả việc train model mới và test các model đã huấn luyện.
+Đây là project huấn luyện và kiểm thử AI chơi game Pokémon Red trên giả lập Game Boy, sử dụng các thuật toán PPO của reinforcement learning. Project hỗ trợ cả việc train model mới và test các model đã huấn luyện.
 
 ---
 
